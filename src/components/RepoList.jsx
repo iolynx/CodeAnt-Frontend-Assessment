@@ -13,12 +13,15 @@ const StyledBox = styled(Box)(() => ({
   paddingRight: '5px',
   margin: '5px',
   display: 'inline-block',
-  height: '23px'
+  alignItems: 'center',
+  justifyItems: 'center',
+  lineHeight: 'normal',
+  height: '20px'
 }));
 
 const StyledListItem = styled(ListItem)(() => ({
   position: 'relative',
-  '&::after': {
+  '&:not(:last-child)::after': {
     content: '""',
     position: 'absolute',
     left: 0,
@@ -55,7 +58,7 @@ export default function RepoList() {
                   <Typography variant='repoType'> {item.type} </Typography>
                 </StyledBox>
               </div>
-              <Stack direction='row' gap={6}>
+              <Stack direction='row' gap={5}>
                 <div>
                   <Typography variant='caption'> {item.tech} </Typography>
                   <BlueDot />

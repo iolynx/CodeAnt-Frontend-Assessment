@@ -12,6 +12,7 @@ import GearIcon from '../assets/iconsvg/gear.svg?react'
 import PhoneIcon from '../assets/iconsvg/phone.svg?react'
 import SignOutIcon from '../assets/iconsvg/sign-out.svg?react'
 import { Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const mainListItems = [
   { text: 'Repositories', icon: <HomeIcon /> },
@@ -27,12 +28,21 @@ const secondaryListItems = [
 ];
 
 export default function MenuContent() {
+  const navigate = useNavigate()
+
+
+  const handleClick = (index) => {
+    if (index === 1) {
+      navigate('/')
+    }
+  }
+
   return (
     <Stack sx={{ flexGrow: 1, p: 1, justifyContent: 'space-between' }}>
       <List dense>
         {mainListItems.map((item, index) => (
           <ListItem key={index} disablePadding sx={{ display: 'block', mb: 0.8 }}>
-            <ListItemButton selected={index === 0}>
+            <ListItemButton selected={index === 0} >
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText
                 primary={
@@ -47,7 +57,7 @@ export default function MenuContent() {
       <List dense>
         {secondaryListItems.map((item, index) => (
           <ListItem key={index} disablePadding sx={{ display: 'block' }}>
-            <ListItemButton>
+            <ListItemButton onClick={() => handleClick(index)}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText
                 primary={
@@ -58,7 +68,7 @@ export default function MenuContent() {
           </ListItem>
         ))}
       </List>
-    </Stack>
+    </Stack >
   );
 }
 

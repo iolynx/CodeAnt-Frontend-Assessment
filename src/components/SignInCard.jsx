@@ -24,7 +24,7 @@ export default function SignInCard() {
   }
 
   return (
-    <Stack direction="column" gap={2} sx={{ flex: 1, pt: 16, p: 17 }}>
+    <Stack direction="column" gap={2} sx={{ flex: 1, pt: 16, px: 2 }}>
       <Card variant="outlined" sx={{ alignItems: 'center', alignContent: 'center' }}>
         <Box
           sx={{
@@ -39,7 +39,7 @@ export default function SignInCard() {
         <Typography component='h2' variant='h4' sx={{ width: '100%', fontSize: 'clamp(2rem, 10vw, 2.15rem)' }}>
           Welcome to CodeAnt AI
         </Typography>
-        <Box sx={{ p: '10px', width: '500px' }}>
+        <Box sx={{ p: '10px', width: '100%' }}>
           <ToggleButtonGroup
             value={selected}
             fullWidth
