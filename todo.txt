@@ -10,4 +10,8 @@ fix 90% bug in signinpage
 MAINPAGE:
 fix the button (it becomes white n shit)
 border: '1px solid var(--template-palette-divider)' 
+add user select thingy
 
+
+
+add to resume btw
