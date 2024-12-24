@@ -9,6 +9,7 @@ import PhoneIcon from '../assets/iconsvg/phone.svg?react'
 import SignOutIcon from '../assets/iconsvg/sign-out.svg?react'
 import CodeAntLogo from '../assets/CodeAnt.svg?react'
 import CloseIcon from '../assets/iconsvg/close.svg?react'
+import UserSelect from './UserSelect'
 
 const mainListItems = [
   { text: 'Repositories', icon: <HomeIcon /> },
@@ -28,7 +29,10 @@ export default function PhoneMenu({ toggleDrawer }) {
         <CodeAntLogo />
         <IconButton onClick={toggleDrawer(false)}> <CloseIcon /> </IconButton>
       </Stack>
-      <List dense>
+
+      <UserSelect />
+
+      <List dense sx={{ mt: 2 }}>
         {mainListItems.map((item, index) => (
           <ListItem key={index} disablePadding sx={{ display: 'block', mb: 0.8 }}>
             <ListItemButton selected={index === 0}>

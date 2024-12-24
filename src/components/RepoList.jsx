@@ -42,11 +42,11 @@ const repositoryList = [
 
 export default function RepoList() {
   return (
-    <Stack sx={{ flexGrow: 1, p: 1, justifyContent: 'left' }}>
+    <Stack sx={{ flexGrow: 1, p: 1, pt: 0, justifyContent: 'left' }}>
       <List dense>
         {repositoryList.map((item, index) => (
           <StyledListItem key={index} disablePadding sx={{
-            display: 'block', p: '6px',
+            display: 'block', p: '8px', pb: '12px'
           }}>
             <Stack>
               <div>

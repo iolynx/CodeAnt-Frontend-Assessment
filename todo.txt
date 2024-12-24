@@ -8,6 +8,7 @@ fix borders in signinpage
 fix 90% bug in signinpage
 
 MAINPAGE:
+fix the weird padding issue for the first repository entry
 fix the button (it becomes white n shit)
 border: '1px solid var(--template-palette-divider)' 
 add user select thingy

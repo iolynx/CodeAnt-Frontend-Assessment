@@ -2,6 +2,7 @@ import { Box, styled } from '@mui/material';
 import MuiDrawer, { drawerClasses } from '@mui/material/Drawer'
 import MenuContent from './MenuContent'
 import CodeAntLogo from '../assets/CodeAntLogo.svg?react'
+import UserSelect from './UserSelect'
 
 
 const drawerWidth = 230;
@@ -30,6 +31,7 @@ export default function SideMenu() {
       <Box sx={{ mt: 3, ml: 2 }}>
         <CodeAntLogo />
       </Box>
+      <UserSelect />
       <MenuContent />
     </Drawer >
   )
