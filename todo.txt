@@ -1,0 +1,13 @@
+OVERALL:
+commit to github
+add default colorscheme
+maybe see if you can alter the theme without using css
+
+SIGNINPAGE:
+fix borders in signinpage
+fix 90% bug in signinpage
+
+MAINPAGE:
+fix the button (it becomes white n shit)
+border: '1px solid var(--template-palette-divider)' 
+
