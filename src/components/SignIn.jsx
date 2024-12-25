@@ -4,8 +4,6 @@ import SignInCard from './SignInCard'
 import AppTheme from '../theme/AppTheme'
 import { CssBaseline, Box, Divider } from '@mui/material'
 import CodeAntLarge from '../assets/CodeAntLarge.svg?react'
-import ColorModeIconDropdown from '../theme/ColorModeIconDropdown.jsx'
-//TODO: add auto-selecting light mode here 
 
 export default function SignIn() {
   return (
