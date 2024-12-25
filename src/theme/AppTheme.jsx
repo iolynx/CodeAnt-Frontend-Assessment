@@ -31,6 +31,15 @@ function AppTheme(props) {
           ...navigationCustomizations,
           ...surfacesCustomizations,
           ...themeComponents,
+          MuiListItemButton: {
+            styleOverrides: {
+              root: {
+                '&:hover': {
+                  backgroundColor: '#dbd6ff',
+                },
+              },
+            },
+          },
         },
       });
   }, [disableCustomTheme, themeComponents]);

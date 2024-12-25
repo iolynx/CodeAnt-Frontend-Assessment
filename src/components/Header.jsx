@@ -2,7 +2,15 @@ import { Stack, Typography, Button, TextField, InputAdornment, AppBar } from "@m
 import RefreshIcon from '../assets/iconsvg/refresh.svg?react'
 import AddIcon from '../assets/iconsvg/add.svg?react'
 import SearchIcon from '../assets/iconsvg/search.svg?react'
-import CodeAntLogo from '../assets/CodeAnt.svg?react'
+import { styled } from "@mui/system"
+
+
+const StyledButton = styled(Button)(() => ({
+  '&:hover': {
+    backgroundColor: '#5a98ef',
+    borderColor: '#5a98ef', // Optional if there's a border
+  },
+}))
 
 export default function Header() {
   return (
@@ -16,9 +24,10 @@ export default function Header() {
           <Button variant='outlined' startIcon={<RefreshIcon />}>
             Refresh All
           </Button>
-          <Button variant='outlined' startIcon={<AddIcon />} sx={{ color: '#ffffff', backgroundColor: '#1570ef' }}>
+          <StyledButton variant='outlined' startIcon={<AddIcon />} sx={{ color: '#ffffff', backgroundColor: '#1570ef' }}>
+
             Add Repository
-          </Button>
+          </StyledButton>
         </Stack>
       </Stack>
       <TextField variant='outlined' placeholder='Search Repositories'

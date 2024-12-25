@@ -4,15 +4,7 @@ add default colorscheme
 maybe see if you can alter the theme without using css
 
 SIGNINPAGE:
-fix borders in signinpage
-fix 90% bug in signinpage
+fix borders in signinpage - sorta fxed
 
 MAINPAGE:
-fix the weird padding issue for the first repository entry
-fix the button (it becomes white n shit)
-border: '1px solid var(--template-palette-divider)' 
 add user select thingy
-
-
-
-add to resume btw
