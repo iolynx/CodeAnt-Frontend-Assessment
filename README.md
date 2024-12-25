@@ -29,4 +29,9 @@ _HomePage_
 ![image](https://github.com/user-attachments/assets/b0be1fa8-a852-47d6-ab80-f14dbe1a427f)
 _MainPage (Repository Page)_
 
+![image](https://github.com/user-attachments/assets/4528e4e2-0f05-4e6f-8fcb-475b5527cf89)
+<br/> _MainPage on Phone_
+
+![image](https://github.com/user-attachments/assets/c3950e6e-c3f4-4e6f-8712-3c5bcc5f37fd)
+<br/> _Custom Phone Navbar_
 
