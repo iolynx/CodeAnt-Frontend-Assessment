@@ -1,10 +1,8 @@
 OVERALL:
-commit to github
-add default colorscheme
-maybe see if you can alter the theme without using css
+add default colorscheme - done
 
 SIGNINPAGE:
-fix borders in signinpage - sorta fxed
+fix borders in signinpage - done
 
 MAINPAGE:
-add user select thingy
+add user select - done
