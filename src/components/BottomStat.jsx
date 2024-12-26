@@ -14,7 +14,7 @@ export default function BottomStat() {
         pb: 0,
         display: 'flex',
         alignItems: 'center',
-        maxWidth: 250,
+        maxWidth: '60%',
         mx: 'auto',
         position: 'relative',
         top: '-30px',
@@ -24,8 +24,8 @@ export default function BottomStat() {
       <Stack direction="column" sx={{ mt: -3 }}>
         <Box
           sx={{
-            width: 50,
-            height: 50,
+            width: '70%',
+            height: '100%',
             borderRadius: '50%',
             backgroundColor: '#c8b9f5',
             display: 'flex',

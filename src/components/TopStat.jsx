@@ -4,17 +4,17 @@ import CodeAntSmall from '../assets/CodeAntSmall.svg?react'
 export default function TopStat() {
   return (
     <Paper
-      elevation={3}
+      elevation={5}
       sx={{
         borderRadius: 3,
         p: 3,
         mb: 2,
-        width: '116%',
+        maxWidth: '116%',
         mx: 2,
         textAlign: 'center',
       }}
     >
-      <Stack direction="row" sx={{}} spacing={1}>
+      <Stack direction="row" spacing={1}>
         <CodeAntSmall />
         <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
           AI to Detect & Autofix Bad Code

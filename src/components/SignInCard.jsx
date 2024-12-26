@@ -36,10 +36,10 @@ export default function SignInCard() {
         >
           <CodeAntIcon />
         </Box>
-        <Typography component='h2' variant='h4' sx={{ width: '100%', fontSize: 'clamp(2rem, 10vw, 2.15rem)' }}>
+        <Typography component='h2' variant='h4' sx={{ fontSize: 'clamp(2rem, 10vw, 2.15rem)' }}>
           Welcome to CodeAnt AI
         </Typography>
-        <Box sx={{ p: '10px', width: '100%' }}>
+        <Box sx={{ p: '10px' }}>
           <ToggleButtonGroup
             value={selected}
             fullWidth

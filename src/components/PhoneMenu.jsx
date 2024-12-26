@@ -10,6 +10,7 @@ import SignOutIcon from '../assets/iconsvg/sign-out.svg?react'
 import CodeAntLogo from '../assets/CodeAnt.svg?react'
 import CloseIcon from '../assets/iconsvg/close.svg?react'
 import UserSelect from './UserSelect'
+import { useNavigate } from 'react-router-dom'
 
 const mainListItems = [
   { text: 'Repositories', icon: <HomeIcon /> },
@@ -23,6 +24,14 @@ const mainListItems = [
 
 // eslint-disable-next-line react/prop-types
 export default function PhoneMenu({ toggleDrawer }) {
+  const navigate = useNavigate();
+
+  const handleClick = (index) => {
+    if (index === 6) {
+      navigate('/')
+    }
+  }
+
   return (
     <Stack sx={{ flexGrow: 1, p: 1, justifyContent: 'space-between' }}>
       <Stack direction='row' sx={{ justifyContent: 'space-between' }}>
@@ -35,7 +44,7 @@ export default function PhoneMenu({ toggleDrawer }) {
       <List dense sx={{ mt: 2 }}>
         {mainListItems.map((item, index) => (
           <ListItem key={index} disablePadding sx={{ display: 'block', mb: 0.8 }}>
-            <ListItemButton selected={index === 0}>
+            <ListItemButton selected={index === 0} onClick={() => handleClick(index)}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText
                 primary={

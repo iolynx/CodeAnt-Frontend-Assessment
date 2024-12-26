@@ -17,6 +17,7 @@ export default function SignIn() {
           // height: 'calc((1 - var(--template-frame-height, 0)) * 100%)',
           // marginTop: 'max(40px - var(--template-frame-height, 0px), 0px)',
           minHeight: '100%',
+          minWidth: '320px',
           // transform: 'translateY(-50%)',
           // pt: 12
           pt: 0
@@ -25,12 +26,11 @@ export default function SignIn() {
         <Stack
           direction={{ xs: 'column-reverse', md: 'row' }}
           sx={{
-            justifyContent: 'space-around',
             gap: { xs: 6, sm: 12 },
           }}
         >
           <Content />
-          <Divider orientation="vertical" sx={{ height: '100vh' }} />
+          <Divider orientation="vertical" sx={{ height: '100vh', display: { xs: 'none', md: 'flex' } }} />
           <SignInCard />
         </Stack>
       </Stack>
@@ -41,7 +41,8 @@ export default function SignIn() {
           left: 0,   // Align to the left of the screen
           padding: 0, // Add some spacing from the edges
           display: { xs: 'none', md: 'flex' },
-          scale: '0.8'
+          scale: '0.8',
+          m: -2
         }}
       >
         <CodeAntLarge />
